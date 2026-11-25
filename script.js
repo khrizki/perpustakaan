@@ -101,7 +101,7 @@ function jalankanHitung(section) {
 
 /* Navigasi aktif */
 const halaman =
-  location.pathname.split(/[\\/]/).pop() || "perpustakaan-silvia.html";
+  location.pathname.split(/[\\/]/).pop() || "index.html";
 document.querySelectorAll(".tautan a[href]").forEach((a) => {
   if (a.getAttribute("href") === halaman) a.classList.add("aktif");
 });

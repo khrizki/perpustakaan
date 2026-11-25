@@ -13,7 +13,9 @@
       try {
         document.documentElement.dataset.tema =
           localStorage.getItem("tema-perpus-tanah-datar") ||
-          (matchMedia("(prefers-color-scheme: dark)").matches ? "gelap" : "terang");
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "gelap"
+            : "terang");
       } catch (e) {}
     </script>
   </head>
@@ -21,9 +23,21 @@
     <div class="laju-gulir" aria-hidden="true"><span></span></div>
 
     <div class="muat" aria-hidden="true">
-      <svg class="logo-muat" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <svg
+        class="logo-muat"
+        width="54"
+        height="54"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
         <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v16H6.5A2.5 2.5 0 0 0 4 21.5z" />
-        <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16h5.5A2.5 2.5 0 0 1 20 21.5z" />
+        <path
+          d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16h5.5A2.5 2.5 0 0 1 20 21.5z"
+        />
       </svg>
       <span class="teks-muat">Perpustakaan Tanah Datar</span>
       <span class="bar"><span></span></span>
@@ -34,16 +48,30 @@
       <i class="blob blob-a" aria-hidden="true"></i>
       <i class="blob blob-b" aria-hidden="true"></i>
       <nav class="navigasi">
-        <a class="merek" href="perpustakaan-silvia.html">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v16H6.5A2.5 2.5 0 0 0 4 21.5z" />
-            <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16h5.5A2.5 2.5 0 0 1 20 21.5z" />
+        <a class="merek" href="index.html">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v16H6.5A2.5 2.5 0 0 0 4 21.5z"
+            />
+            <path
+              d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16h5.5A2.5 2.5 0 0 1 20 21.5z"
+            />
           </svg>
           <span>Perpustakaan Tanah Datar</span>
         </a>
 
         <div class="tautan">
-          <a href="perpustakaan-silvia.html">Beranda</a>
+          <a href="index.html">Beranda</a>
           <a href="#profil">Profil</a>
           <a href="#layanan">Layanan</a>
           <a href="#koleksi">Koleksi</a>
@@ -51,12 +79,39 @@
           <a href="tentang.html">Tentang Kami</a>
         </div>
 
-        <button class="tombol-tema" type="button" aria-label="Ganti tema terang atau gelap">
-          <svg class="ikon-siang" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <button
+          class="tombol-tema"
+          type="button"
+          aria-label="Ganti tema terang atau gelap"
+        >
+          <svg
+            class="ikon-siang"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
             <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+            <path
+              d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"
+            />
           </svg>
-          <svg class="ikon-malam" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg
+            class="ikon-malam"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
             <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
           </svg>
         </button>
@@ -71,8 +126,12 @@
           seluruh warga Kabupaten Tanah Datar.
         </p>
         <div class="aksi">
-          <a class="tombol tombol-utama" href="#layanan"><span>Lihat Layanan</span></a>
-          <a class="tombol tombol-kedua" href="tentang.html"><span>Profil Perpustakaan</span></a>
+          <a class="tombol tombol-utama" href="#layanan"
+            ><span>Lihat Layanan</span></a
+          >
+          <a class="tombol tombol-kedua" href="tentang.html"
+            ><span>Profil Perpustakaan</span></a
+          >
         </div>
         <p class="rotasi-baris">
           Melayani
@@ -132,8 +191,8 @@
                 Perpustakaan Tanah Datar adalah perpustakaan daerah yang
                 berfungsi sebagai pusat koleksi, diseminasi informasi, dan
                 pengembangan literasi masyarakat. Kami mengelola koleksi umum,
-                koleksi keislaman, ensiklopedia, serta karya penulis dan budayawan
-                Tanah Datar.
+                koleksi keislaman, ensiklopedia, serta karya penulis dan
+                budayawan Tanah Datar.
               </p>
               <p>
                 Selain melayani peminjaman di gedung, kami mengoperasikan
@@ -142,8 +201,15 @@
               </p>
             </div>
             <div class="kotak-info">
-              <p><strong>Misi Utama:</strong> mewujudkan masyarakat Tanah Datar yang gemar membaca, cakap informasi, dan bangga akan karya lokal.</p>
-              <p><strong>Nilai Kami:</strong> ramah, terbuka, inklusif, dan menjaga khazanah kebudayaan Minangkabau.</p>
+              <p>
+                <strong>Misi Utama:</strong> mewujudkan masyarakat Tanah Datar
+                yang gemar membaca, cakap informasi, dan bangga akan karya
+                lokal.
+              </p>
+              <p>
+                <strong>Nilai Kami:</strong> ramah, terbuka, inklusif, dan
+                menjaga khazanah kebudayaan Minangkabau.
+              </p>
             </div>
           </div>
         </section>
@@ -153,43 +219,98 @@
           <div class="layanan">
             <article class="layanan-kartu">
               <div class="ikon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
                   <path d="M12 3v10" />
                   <path d="M8 9l4 4 4-4" />
                   <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
                 </svg>
               </div>
               <h3>Peminjaman &amp; Pengembalian</h3>
-              <p>Pinjam hingga 5 judul selama 14 hari, perpanjangan daring, dan meja pengembalian yang cepat.</p>
+              <p>
+                Pinjam hingga 5 judul selama 14 hari, perpanjangan daring, dan
+                meja pengembalian yang cepat.
+              </p>
             </article>
 
             <article class="layanan-kartu">
               <div class="ikon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
                   <rect x="2" y="4" width="20" height="13" rx="2" />
                   <path d="M8 21h8M12 17v4" />
                   <path d="M7 9h6M7 12h8" />
                 </svg>
               </div>
               <h3>Koleksi Digital</h3>
-              <p>E-book, jurnal ilmiah, arsip surat kabar lama, dan repositori karya penulis Tanah Datar.</p>
+              <p>
+                E-book, jurnal ilmiah, arsip surat kabar lama, dan repositori
+                karya penulis Tanah Datar.
+              </p>
             </article>
 
             <article class="layanan-kartu">
               <div class="ikon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
                   <path d="M5 12.5a10 10 0 0 1 14 0" />
                   <path d="M8.5 16a5.5 5.5 0 0 1 7 0" />
-                  <circle cx="12" cy="19.5" r="1.3" fill="currentColor" stroke="none" />
+                  <circle
+                    cx="12"
+                    cy="19.5"
+                    r="1.3"
+                    fill="currentColor"
+                    stroke="none"
+                  />
                 </svg>
               </div>
               <h3>Ruang Baca &amp; Wi-Fi</h3>
-              <p>Ruang baca berpendingin, stopkontak tiap meja, dan internet gratis untuk umum.</p>
+              <p>
+                Ruang baca berpendingin, stopkontak tiap meja, dan internet
+                gratis untuk umum.
+              </p>
             </article>
 
             <article class="layanan-kartu">
               <div class="ikon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
                   <rect x="3" y="5" width="18" height="11" rx="2" />
                   <path d="M3 11h18" />
                   <circle cx="7.5" cy="18.5" r="1.8" />
@@ -197,28 +318,59 @@
                 </svg>
               </div>
               <h3>Perpustakaan Keliling</h3>
-              <p>Mobil keliling menyambangi sekolah, nagari, dan pasar setiap pekan.</p>
+              <p>
+                Mobil keliling menyambangi sekolah, nagari, dan pasar setiap
+                pekan.
+              </p>
             </article>
 
             <article class="layanan-kartu">
               <div class="ikon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
                   <path d="M12 4L2 9l10 5 10-5z" />
                   <path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5" />
                 </svg>
               </div>
               <h3>Program Literasi</h3>
-              <p>Kelas menulis, pelatihan riset, bedah buku, dan pendampingan baca untuk sekolah.</p>
+              <p>
+                Kelas menulis, pelatihan riset, bedah buku, dan pendampingan
+                baca untuk sekolah.
+              </p>
             </article>
 
             <article class="layanan-kartu">
               <div class="ikon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.2l5.9-.8z" />
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.2l5.9-.8z"
+                  />
                 </svg>
               </div>
               <h3>Pojok Anak</h3>
-              <p>Koleksi cerita anak, komik, mainan edukatif, dan sudut dongeng tiap Sabtu pagi.</p>
+              <p>
+                Koleksi cerita anak, komik, mainan edukatif, dan sudut dongeng
+                tiap Sabtu pagi.
+              </p>
             </article>
           </div>
         </section>
@@ -230,19 +382,28 @@
               <span class="tag">Rak Referensi</span>
               <img src="images/buku.jpg" alt="Koleksi buku referensi" />
               <h3>Buku &amp; Ensiklopedia</h3>
-              <p>Kamus, atlas, biografi tokoh, hingga khasanah adat istiadat Minangkabau.</p>
+              <p>
+                Kamus, atlas, biografi tokoh, hingga khasanah adat istiadat
+                Minangkabau.
+              </p>
             </article>
             <article class="kartu">
               <span class="tag">Digital</span>
               <img src="images/jurnal.jpg" alt="Koleksi jurnal ilmiah" />
               <h3>Jurnal &amp; E-Resources</h3>
-              <p>Jurnal ilmiah, tugas akhir, dan basis data daring yang dapat diakses anggota.</p>
+              <p>
+                Jurnal ilmiah, tugas akhir, dan basis data daring yang dapat
+                diakses anggota.
+              </p>
             </article>
             <article class="kartu">
               <span class="tag">Fasilitas</span>
               <img src="images/ruang-baca.jpg" alt="Ruang baca perpustakaan" />
               <h3>Ruang Baca Nyaman</h3>
-              <p>Sudut baca tenang dengan pencahayaan natural dan area diskusi kelompok.</p>
+              <p>
+                Sudut baca tenang dengan pencahayaan natural dan area diskusi
+                kelompok.
+              </p>
             </article>
           </div>
         </section>
@@ -253,22 +414,34 @@
             <li>
               <span class="tanggal">12 Oktober 2026</span>
               <h3>Dongeng &amp; Membaca Bersama</h3>
-              <p>Sesi dongeng untuk anak usia 5–10 tahun di Pojok Anak, pukul 09.00 WIB.</p>
+              <p>
+                Sesi dongeng untuk anak usia 5–10 tahun di Pojok Anak, pukul
+                09.00 WIB.
+              </p>
             </li>
             <li>
               <span class="tanggal">21 Oktober 2026</span>
               <h3>Kelas Menulis Kreatif</h3>
-              <p>Pelatihan menulis esai dan cerpen bersama komunitas penulis Tanah Datar.</p>
+              <p>
+                Pelatihan menulis esai dan cerpen bersama komunitas penulis
+                Tanah Datar.
+              </p>
             </li>
             <li>
               <span class="tanggal">5 November 2026</span>
               <h3>Bedah Buku Khasanah Lokal</h3>
-              <p>Diskusi buku sejarah dan budaya daerah bersama sejarawan serta pustakawan.</p>
+              <p>
+                Diskusi buku sejarah dan budaya daerah bersama sejarawan serta
+                pustakawan.
+              </p>
             </li>
             <li>
               <span class="tanggal">18 November 2026</span>
               <h3>Perpustakaan Keliling ke Nagari</h3>
-              <p>Kunjungan mobil keliling ke sekolah dasar di wilayah Limo Kaum dan Pariangan.</p>
+              <p>
+                Kunjungan mobil keliling ke sekolah dasar di wilayah Limo Kaum
+                dan Pariangan.
+              </p>
             </li>
           </ul>
         </section>
@@ -277,12 +450,16 @@
           <h2>Siap Bergabung?</h2>
           <p>
             Pendaftaran keanggotaan gratis dan dapat dilakukan langsung di meja
-            layanan atau secara daring. Cukup membawa KTP atau kartu pelajar untuk
-            mulai meminjam koleksi.
+            layanan atau secara daring. Cukup membawa KTP atau kartu pelajar
+            untuk mulai meminjam koleksi.
           </p>
           <div class="aksi">
-            <a class="tombol tombol-utama" href="mailto:perpus@tanahdatar.go.id"><span>Daftar Anggota</span></a>
-            <a class="tombol tombol-kedua" href="tentang.html"><span>Jam &amp; Lokasi</span></a>
+            <a class="tombol tombol-utama" href="mailto:perpus@tanahdatar.go.id"
+              ><span>Daftar Anggota</span></a
+            >
+            <a class="tombol tombol-kedua" href="tentang.html"
+              ><span>Jam &amp; Lokasi</span></a
+            >
           </div>
         </section>
       </main>
@@ -326,19 +503,42 @@
             <ul>
               <li>Gedung Perpustakaan Daerah, Tanah Datar</li>
               <li>Senin – Sabtu, 08.00 – 16.00 WIB</li>
-              <li><a href="mailto:perpus@tanahdatar.go.id">perpus@tanahdatar.go.id</a></li>
-              <li><a href="https://perpustakaan.uinib.ac.id" target="_blank" rel="noopener">Situs Resmi UINIB</a></li>
+              <li>
+                <a href="mailto:perpus@tanahdatar.go.id"
+                  >perpus@tanahdatar.go.id</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://perpustakaan.uinib.ac.id"
+                  target="_blank"
+                  rel="noopener"
+                  >Situs Resmi UINIB</a
+                >
+              </li>
             </ul>
           </div>
         </div>
         <p class="hak-cipta">
-          &copy; 2026 <a href="perpustakaan-silvia.html">Perpustakaan Tanah Datar</a>. Hak cipta dilindungi.
+          &copy; 2026
+          <a href="index.html">Perpustakaan Tanah Datar</a>. Hak
+          cipta dilindungi.
         </p>
       </footer>
     </div>
 
     <button class="ke-atas" type="button" aria-label="Kembali ke atas">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
         <path d="M12 19V5" />
         <path d="M6 11l6-6 6 6" />
       </svg>
