@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Profil, sejarah, visi misi, fasilitas, dan jam layanan Perpustakaan Tanah Datar."
+    />
+    <title>Perpustakaan Tanah Datar - Tentang Kami</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      try {
+        document.documentElement.dataset.tema =
+          localStorage.getItem("tema-perpus-tanah-datar") ||
+          (matchMedia("(prefers-color-scheme: dark)").matches ? "gelap" : "terang");
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div class="laju-gulir" aria-hidden="true"><span></span></div>
+
+    <div class="muat" aria-hidden="true">
+      <svg class="logo-muat" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v16H6.5A2.5 2.5 0 0 0 4 21.5z" />
+        <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16h5.5A2.5 2.5 0 0 1 20 21.5z" />
+      </svg>
+      <span class="teks-muat">Perpustakaan Tanah Datar</span>
+      <span class="bar"><span></span></span>
+    </div>
+
+    <div class="container">
+      <div class="bercahaya" aria-hidden="true"></div>
+      <i class="blob blob-a" aria-hidden="true"></i>
+      <i class="blob blob-b" aria-hidden="true"></i>
+      <nav class="navigasi">
+        <a class="merek" href="perpustakaan-silvia.html">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v16H6.5A2.5 2.5 0 0 0 4 21.5z" />
+            <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16h5.5A2.5 2.5 0 0 1 20 21.5z" />
+          </svg>
+          <span>Perpustakaan Tanah Datar</span>
+        </a>
+
+        <div class="tautan">
+          <a href="perpustakaan-silvia.html">Beranda</a>
+          <a href="#sejarah">Sejarah</a>
+          <a href="#visi">Visi &amp; Misi</a>
+          <a href="#fasilitas">Fasilitas</a>
+          <a href="#faq">FAQ</a>
+          <a href="tentang.html">Tentang Kami</a>
+        </div>
+
+        <button class="tombol-tema" type="button" aria-label="Ganti tema terang atau gelap">
+          <svg class="ikon-siang" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+          </svg>
+          <svg class="ikon-malam" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+      </nav>
+
+      <header class="hero">
+        <span class="lencana">Profil &amp; Sejarah</span>
+        <h1>Tentang Perpustakaan Tanah Datar</h1>
+        <p class="lead">
+          Mengenal lebih dekat perjalanan, arah, fasilitas, dan layanan
+          perpustakaan daerah yang melayani masyarakat Tanah Datar.
+        </p>
+        <p class="rotasi-baris">
+          Melayani
+          <span
+            class="rotasi"
+            data-kata="pelajar|mahasiswa|peneliti|guru|warga umum|komunitas baca"
+            >pelajar</span
+          >
+          di Tanah Datar
+        </p>
+      </header>
+
+      <main>
+        <section id="sejarah" class="reveal geser-kiri">
+          <h2>Sejarah Singkat</h2>
+          <p>
+            Perpustakaan Tanah Datar tumbuh bersama perkembangan pendidikan di
+            daerah ini. Berawal dari ruang baca kecil di lingkungan pemerintahan
+            kabupaten, kini kami menjadi pusat koleksi dan literasi yang
+            menghimpun karya ilmiah, khasanah adat, serta bahan bacaan populer
+            bagi seluruh lapisan masyarakat.
+          </p>
+          <ul class="agenda">
+            <li>
+              <span class="tanggal">1998</span>
+              <h3> Ruang Baca Daerah</h3>
+              <p>Perpustakaan dibentuk sebagai unit layanan bacaan pegawai dan pelajar.</p>
+            </li>
+            <li>
+              <span class="tanggal">2009</span>
+              <h3>Gedung Baru &amp; Koleksi Umum</h3>
+              <p>Operasional gedung sendiri dengan penambahan rak koleksi umum dan anak.</p>
+            </li>
+            <li>
+              <span class="tanggal">2017</span>
+              <h3>Layanan Digital</h3>
+              <p>Katalog daring, e-jurnal, dan sistem keanggotaan berbasis komputer.</p>
+            </li>
+            <li>
+              <span class="tanggal">2024</span>
+              <h3>Perpustakaan Modern</h3>
+              <p>Rebranding, pojok baca 12 nagari, dan program literasi terintegrasi.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="visi" class="reveal geser-kanan">
+          <h2>Visi &amp; Misi</h2>
+          <div class="grid-2">
+            <div class="kotak-info">
+              <p><strong>Visi:</strong> menjadi perpustakaan daerah yang unggul, inklusif, dan menjadi budaya baca masyarakat Tanah Datar.</p>
+            </div>
+            <div class="layanan-kartu">
+              <h3>Misi Kami</h3>
+              <ul class="daftar-cek">
+                <li>Menyediakan koleksi relevan dan mudah diakses</li>
+                <li>Mengembangkan program literasi sekolah dan nagari</li>
+                <li>Melestarikan karya dan arsip lokal Tanah Datar</li>
+                <li>Melayani dengan ramah, cepat, dan tanpa diskriminasi</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="fasilitas" class="reveal zum">
+          <h2>Fasilitas &amp; Jam Layanan</h2>
+          <div class="grid-2">
+            <div class="layanan-kartu">
+              <div class="ikon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </div>
+              <h3>Lokasi</h3>
+              <p>
+                Gedung Perpustakaan Daerah, Jl. Lintas Tanah Datar, Kabupaten
+                Tanah Datar, Sumatera Barat. Tersedia area parkir dan jalur
+                ramah kursi roda.
+              </p>
+              <ul class="daftar-cek">
+                <li>Ruang baca umum berpendingin</li>
+                <li>Pojok anak dan area diskusi</li>
+                <li>Wi-Fi gratis dan colokan tiap meja</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="kotak-info">
+                <p><strong>Jam Layanan:</strong> Senin – Sabtu, 08.00 – 16.00 WIB</p>
+                <p><strong>Istirahat:</strong> 12.00 – 13.00 WIB &nbsp;|&nbsp; <strong>Tutup:</strong> Hari libur nasional</p>
+              </div>
+              <table class="tabel-jam">
+                <thead>
+                  <tr>
+                    <th>Hari</th>
+                    <th>Jam Buka</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Senin – Kamis</td>
+                    <td>08.00 – 16.00 WIB</td>
+                  </tr>
+                  <tr>
+                    <td>Jumat</td>
+                    <td>08.00 – 11.30 &amp; 13.00 – 16.00</td>
+                  </tr>
+                  <tr>
+                    <td>Sabtu</td>
+                    <td>08.00 – 14.00 WIB</td>
+                  </tr>
+                  <tr>
+                    <td>Minggu</td>
+                    <td>Tutup</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="reveal geser-kanan">
+          <h2>Pertanyaan Umum</h2>
+          <div class="faq">
+            <details>
+              <summary>Bagaimana cara mendaftar menjadi anggota?</summary>
+              <div class="jawaban">
+                <p>
+                  Datang ke meja layanan dengan membawa KTP atau kartu pelajar,
+                  isi formulir keanggotaan, dan kartu anggota langsung dapat
+                  digunakan. Pendaftaran tidak dipungut biaya.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Berapa lama masa pinjam sebuah buku?</summary>
+              <div class="jawaban">
+                <p>
+                  Setiap anggota dapat meminjam maksimal 5 judul selama 14 hari.
+                  Perpanjangan dapat dilakukan dua kali melalui meja layanan atau
+                  permintaan daring.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Apakah koleksi digital bisa diakses dari rumah?</summary>
+              <div class="jawaban">
+                <p>
+                  Bisa. Anggota aktif memperoleh akun untuk mengakses e-book,
+                  jurnal, dan arsip digital melalui katalog daring perpustakaan.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Apakah perpustakaan menerima donasi buku?</summary>
+              <div class="jawaban">
+                <p>
+                  Menerima. Buku yang layak akan diverifikasi pustakawan terlebih
+                  dahulu, lalu dicatat dalam koleksi dan disebutkan nama
+                  penyumbangnya.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Apakah tersedia layanan untuk sekolah dan komunitas?</summary>
+              <div class="jawaban">
+                <p>
+                  Ada. Kami melayani kunjungan sekolah, kelas literasi, serta
+                  perpustakaan keliling ke nagari dan lembaga masyarakat sesuai
+                  jadwal.
+                </p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="ajakan reveal zum">
+          <h2>Kunjungi Kami</h2>
+          <p>
+            Ruang baca kami terbuka untuk pelajar, mahasiswa, peneliti, dan
+            masyarakat umum. Datang, duduk, dan temukan bahan bacaan favorit Anda.
+          </p>
+          <div class="aksi">
+            <a class="tombol tombol-utama" href="perpustakaan-silvia.html"><span>Lihat Beranda</span></a>
+            <a class="tombol tombol-kedua" href="mailto:perpus@tanahdatar.go.id"><span>Hubungi Kami</span></a>
+          </div>
+        </section>
+      </main>
+
+      <div class="ombak" aria-hidden="true">
+        <svg class="ombak-1" viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path
+            fill="rgba(245,158,11,0.35)"
+            d="M0,42 C60,18 180,66 240,42 C300,18 420,66 480,42 C540,18 660,66 720,42 C780,18 900,66 960,42 C1020,18 1140,66 1200,42 C1260,18 1380,66 1440,42 L1440,80 L0,80 Z"
+          />
+        </svg>
+        <svg class="ombak-2" viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path
+            fill="rgba(21,128,61,0.32)"
+            d="M0,52 C60,28 180,76 240,52 C300,28 420,76 480,52 C540,28 660,76 720,52 C780,28 900,76 960,52 C1020,28 1140,76 1200,52 C1260,28 1380,76 1440,52 L1440,80 L0,80 Z"
+          />
+        </svg>
+      </div>
+
+      <footer>
+        <div class="kaki-grid">
+          <div>
+            <h3>Perpustakaan Tanah Datar</h3>
+            <p>
+              Pusat koleksi, informasi, dan literasi masyarakat Kabupaten Tanah
+              Datar, Sumatera Barat. Terbuka untuk umum setiap hari kerja.
+            </p>
+          </div>
+          <div>
+            <h3>Tautan Cepat</h3>
+            <ul>
+              <li><a href="#sejarah">Sejarah Singkat</a></li>
+              <li><a href="#visi">Visi &amp; Misi</a></li>
+              <li><a href="#fasilitas">Fasilitas &amp; Jam</a></li>
+              <li><a href="#faq">Pertanyaan Umum</a></li>
+              <li><a href="perpustakaan-silvia.html">Beranda</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Kontak</h3>
+            <ul>
+              <li>Gedung Perpustakaan Daerah, Tanah Datar</li>
+              <li>Senin – Sabtu, 08.00 – 16.00 WIB</li>
+              <li><a href="mailto:perpus@tanahdatar.go.id">perpus@tanahdatar.go.id</a></li>
+              <li><a href="https://perpustakaan.uinib.ac.id" target="_blank" rel="noopener">Situs Resmi UINIB</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="hak-cipta">
+          &copy; 2026 <a href="perpustakaan-silvia.html">Perpustakaan Tanah Datar</a>. Hak cipta dilindungi.
+        </p>
+      </footer>
+    </div>
+
+    <button class="ke-atas" type="button" aria-label="Kembali ke atas">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 19V5" />
+        <path d="M6 11l6-6 6 6" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
