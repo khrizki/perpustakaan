@@ -1195,14 +1195,12 @@ footer {
   justify-items: center;
   gap: 16px;
   background: linear-gradient(160deg, var(--bg-1), var(--bg-2));
-  animation: hilang-muat 0.65s 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: hilang-muat 0.2s 1.05s linear forwards;
 }
 
 @keyframes hilang-muat {
   to {
-    opacity: 0;
     visibility: hidden;
-    transform: scale(1.06);
   }
 }
 

@@ -109,7 +109,6 @@ document.querySelectorAll(".tautan a[href]").forEach((a) => {
 /* Tombol kembali ke atas + bilah progres + parallax */
 const tombolAtas = document.querySelector(".ke-atas");
 const laju = document.querySelector(".laju-gulir span");
-const heroGambar = document.querySelector(".gelap-gambar");
 const blobA = document.querySelector(".blob-a");
 const blobB = document.querySelector(".blob-b");
 
@@ -122,9 +121,6 @@ const saatGulir = () => {
     laju.style.width = (maks > 0 ? (y / maks) * 100 : 0) + "%";
   }
 
-  if (heroGambar && y < window.innerHeight * 1.4) {
-    heroGambar.style.translate = `0 ${y * -0.05}px`;
-  }
   if (blobA) blobA.style.translate = `0 ${y * 0.12}px`;
   if (blobB) blobB.style.translate = `0 ${y * -0.08}px`;
 };
