@@ -48,11 +48,14 @@ body {
   margin: 0;
   padding: 24px;
   min-height: 100vh;
-  background: radial-gradient(circle at 12% 18%, var(--bg-3) 0, transparent 45%),
+  background:
+    radial-gradient(circle at 12% 18%, var(--bg-3) 0, transparent 45%),
     radial-gradient(circle at 88% 8%, var(--bg-4) 0, transparent 40%),
     linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 100%);
   background-attachment: fixed;
-  transition: background 0.5s ease, color 0.4s ease;
+  transition:
+    background 0.5s ease,
+    color 0.4s ease;
 }
 
 .container {
@@ -83,8 +86,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px 18px;
+  flex-wrap: nowrap;
+  gap: 10px;
   margin-bottom: 26px;
   padding: 10px 14px;
   border-radius: 999px;
@@ -116,6 +119,8 @@ body {
   font-weight: 800;
   font-size: 15px;
   letter-spacing: 0.3px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .merek svg {
@@ -124,7 +129,8 @@ body {
   box-sizing: content-box;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.14);
-  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
     background 0.35s ease;
 }
 
@@ -136,8 +142,8 @@ body {
 .tautan {
   display: flex;
   align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
+  gap: 4px;
+  flex-wrap: nowrap;
 }
 
 .tautan a {
@@ -145,17 +151,21 @@ body {
   color: #eafff2;
   text-decoration: none;
   font-weight: 600;
-  font-size: 14.5px;
-  padding: 7px 11px;
+  font-size: 14px;
+  padding: 7px 10px;
   border-radius: 999px;
-  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .tautan a::after {
   content: "";
   position: absolute;
-  left: 11px;
-  right: 11px;
+  left: 10px;
+  right: 10px;
   bottom: 3px;
   height: 2.5px;
   border-radius: 3px;
@@ -184,12 +194,15 @@ body {
   cursor: pointer;
   width: 38px;
   height: 38px;
+  flex-shrink: 0;
   border-radius: 50%;
   display: grid;
   place-items: center;
   background: rgba(255, 255, 255, 0.16);
   color: #fff;
-  transition: transform 0.4s ease, background 0.3s ease;
+  transition:
+    transform 0.4s ease,
+    background 0.3s ease;
 }
 
 .tombol-tema:hover {
@@ -258,6 +271,7 @@ h2::before {
 
 .lencana {
   display: inline-block;
+  margin-bottom: 14px;
   padding: 7px 18px;
   border-radius: 999px;
   background: rgba(217, 119, 6, 0.14);
@@ -283,6 +297,7 @@ h2::before {
 /* Hero */
 .hero {
   text-align: center;
+  isolation: isolate;
 }
 
 .hero p.lead {
@@ -307,7 +322,8 @@ h2::before {
   border-radius: 999px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.35s ease;
 }
 
@@ -441,7 +457,8 @@ header.hero {
   padding: 20px 12px;
   text-align: center;
   box-shadow: 0 10px 22px rgba(20, 83, 45, 0.08);
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
 
@@ -484,7 +501,9 @@ strong {
 .reveal {
   opacity: 0;
   transform: translateY(34px);
-  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   transition-delay: calc(var(--i, 0) * 90ms);
 }
 
@@ -545,8 +564,10 @@ strong {
   overflow: hidden;
   transform: translateY(var(--ty, 0px)) rotateX(var(--rx, 0deg))
     rotateY(var(--ry, 0deg));
-  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.45s ease, border-color 0.45s ease;
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
 }
 
 .layanan-kartu::before {
@@ -557,10 +578,16 @@ strong {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.22), transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(245, 158, 11, 0.22),
+    transparent 70%
+  );
   transform: scale(0.4);
   opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .layanan-kartu:hover {
@@ -611,7 +638,11 @@ strong {
 }
 
 .kartu {
-  background: linear-gradient(180deg, var(--kartu), color-mix(in srgb, var(--kartu) 85%, var(--bg-3)));
+  background: linear-gradient(
+    180deg,
+    var(--kartu),
+    color-mix(in srgb, var(--kartu) 85%, var(--bg-3))
+  );
   padding: 14px 14px 20px;
   border: 1px solid var(--kartu-tepi);
   border-radius: 18px;
@@ -619,8 +650,10 @@ strong {
   overflow: hidden;
   position: relative;
   transform: translateY(var(--ty, 0px)) rotate(var(--rz, 0deg));
-  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.45s ease, border-color 0.45s ease;
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
 }
 
 .kartu::before {
@@ -652,7 +685,8 @@ strong {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 14px;
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
     filter 0.6s ease;
   filter: saturate(0.9);
 }
@@ -713,7 +747,8 @@ strong {
   border-radius: 16px;
   padding: 16px 20px;
   margin-bottom: 16px;
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s ease;
 }
 
@@ -818,7 +853,9 @@ strong {
 
 .tabel-jam tbody tr {
   background: var(--kartu);
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .tabel-jam tbody tr:nth-child(even) {
@@ -888,7 +925,9 @@ strong {
   border: 1px solid var(--kartu-tepi);
   border-radius: 16px;
   overflow: hidden;
-  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+  transition:
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
 .faq details[open] {
@@ -959,7 +998,12 @@ strong {
   padding: 36px 30px;
   border-radius: 24px;
   text-align: center;
-  background: radial-gradient(circle at 20% 10%, rgba(245, 158, 11, 0.35), transparent 45%),
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(245, 158, 11, 0.35),
+      transparent 45%
+    ),
     linear-gradient(135deg, var(--gelap) 0%, var(--hijau) 100%);
   color: #fff;
   position: relative;
@@ -1045,7 +1089,9 @@ footer {
   color: var(--abu);
   text-decoration: none;
   display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .kaki-grid li a:hover {
@@ -1090,7 +1136,10 @@ footer {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s;
   z-index: 40;
 }
 
@@ -1181,7 +1230,6 @@ footer {
     transform: none;
   }
 }
-
 
 /* ================= Animasi Tambahan ================= */
 
@@ -1281,7 +1329,12 @@ footer {
   height: 100%;
   width: 0;
   border-radius: 0 4px 4px 0;
-  background: linear-gradient(90deg, var(--emas-terang), var(--hijau-terang), var(--emas-terang));
+  background: linear-gradient(
+    90deg,
+    var(--emas-terang),
+    var(--hijau-terang),
+    var(--emas-terang)
+  );
   background-size: 220% 100%;
   animation: kilau-laju 2.6s linear infinite;
   box-shadow: 0 0 12px rgba(245, 158, 11, 0.75);
@@ -1427,8 +1480,20 @@ footer {
   overflow: hidden;
   background: linear-gradient(90deg, var(--gelap), var(--hijau));
   box-shadow: 0 12px 26px rgba(20, 83, 45, 0.24);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
 }
 
 .berjalan .jalur {
@@ -1556,7 +1621,9 @@ footer {
   backdrop-filter: blur(7px);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s;
 }
 
 .lightbox.tampil {
@@ -1572,7 +1639,9 @@ footer {
   box-shadow: 0 34px 70px rgba(0, 0, 0, 0.55);
   transform: scale(0.86) translateY(24px);
   opacity: 0;
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+  transition:
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.4s ease;
 }
 
 .lightbox.tampil img {
@@ -1587,7 +1656,9 @@ footer {
   font-weight: 700;
   opacity: 0;
   transform: translateY(14px);
-  transition: opacity 0.4s 0.18s ease, transform 0.4s 0.18s ease;
+  transition:
+    opacity 0.4s 0.18s ease,
+    transform 0.4s 0.18s ease;
 }
 
 .lightbox.tampil .ket {
@@ -1608,7 +1679,9 @@ footer {
   place-items: center;
   background: rgba(255, 255, 255, 0.14);
   color: #fff;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease;
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background 0.3s ease;
 }
 
 .lightbox .tutup:hover {
